@@ -13,10 +13,10 @@
         top: 0px;
     }
     
-    #leftnav {
+    #leftNav {
         float: left; 
         width: 30%;
-        height: 80%;
+        height: 700px;
         background-color: white;
         border: 1px solid black;
         position: fixed; 
@@ -27,12 +27,26 @@
 
     #playerInfo {
         margin: 10px;
-        height: 80%;
+        height: 700px;
+        float: right;
         position: fixed;
         left: 30%;
         top: 175px;
         overflow: scroll;
         border: 0px;
+    }
+
+    footer {
+        width: 100%;
+        border: 2px solid gray;
+        background-color: black;
+        color: white;
+        height: 50px;
+        clear: both;
+        position: fixed;
+        bottom: -2px;
+        left: -2px;
+        text-align: center;
     }
     
 
@@ -40,10 +54,10 @@
 </head>
 <body>
     <header>
-        <img src="./images/white-sox-shout.png" alt="whitesox" style="display: block; margin-left: auto; margin-right: auto;"> 
+        <a href="index.html"> <img src="./images/white-sox-shout.png" alt="whitesox" style="display: block; margin-left: auto; margin-right: auto;"> </a>
 
     </header>
-    <div id="leftnav">
+    <div id="leftNav">
         <h3>Pitchers Starting Rotation</h3>
             <a href="#27">#27 Lucas Giolito</a><br>
             <a href="#40">#40 Reynaldo López</a><br>
@@ -85,7 +99,7 @@
             <a href="#59">#59 Mark Salas (bullpen catcher/catching)</a><br>
             <a href="#46">#46 Greg Sparks (assistant hitting)</a><br>
             <a href="#31">#31 Todd Steverson (hitting))</a><br>
-    </div> 
+    </div> <!-- #leftNav -->
     <div id="playerInfo">
         <h1>Pitchers Starting Rotation</h1>
             <!-- <img src="./images/27.jpg" height= 150px; alt="27" style="float: left;">     -->
@@ -213,8 +227,10 @@
             <br>
                 <h2 id="31">#31 Todd Steverson (hitting))</h2>
                 <p>Todd Anthony Steverson (born November 15, 1971) is an American professional baseball and former coach, left and right fielder in Major League Baseball. Steverson is the hitting coach of the Chicago White Sox[1] and the former first base coach of the Oakland Athletics. During his active career, he played for the Detroit Tigers and San Diego Padres. Steverson threw and batted right-handed, stood 6 feet 2 inches (1.88 m) tall and weighed 194 pounds (88 kg).</p>
-            <br>
-                
-    </div>
+            <br> 
+    </div> <!-- playerInfo -->
+    <footer>
+        <p>copyright &copy;</p>
+    </footer>
 </body>
 </html>
