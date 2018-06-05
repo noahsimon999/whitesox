@@ -3,8 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>WhiteSox</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
     <style>
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    
     header {
         width:100%;
         height: 175px;
@@ -18,48 +23,65 @@
     #leftNav {
         float: left; 
         width: 30%;
-        height: 700px;
+        height: 62%;
         background-color: white;
-        border: 1px solid black;
+        border-right: 1px solid black;
         position: fixed; 
         left: 0px;
-        top: 174px;
+        top: 175px;
         overflow: scroll;
+        overflow-x: hidden;
+        
+    }
+
+    #leftNav a:hover {
+        color: blue;
+        font-size: 1.25em;
+    }
+    
+    #leftNav a:hover:after {
+        content: " Go!";
     }
 
     #playerInfo {
         margin-left: 10px;
-        height: 700px;
+        height: 62%;
         float: right;
         position: fixed;
         left: 30%;
         top: 175px;
         overflow: scroll;
         border: 0px;
+        overflow-x: hidden;
     }
 
     footer {
         width: 100%;
-        border: 2px solid gray;
+        border-top: 2px solid gray;
         background-color: black;
         color: white;
         height: 50px;
         clear: both;
         position: fixed;
-        bottom: -2px;
-        left: -2px;
+        bottom: 0px;
+        left: 0px;
         text-align: center;
     }
     
+    img:hover {
+        transition: height 0.25s ease-in;
+        height: 300px;
+    }
 
     </style>
 </head>
 <body>
     
+    
+    <header>
+        <a href="index.html"> <img src="./images/white-sox-shout.png" alt="whitesox" style="display: block; margin-left: auto; margin-right: auto;"> </a>
+    </header>
     <div class="w3-animate-bottom">
-        <header>
-            <a href="index.html"> <img src="./images/white-sox-shout.png" alt="whitesox" style="display: block; margin-left: auto; margin-right: auto;"> </a>
-        </header>
         <div id="leftNav">
             <h3>Pitchers Starting Rotation</h3>
                 <a href="#27">#27 Lucas Giolito</a><br>
@@ -101,16 +123,16 @@
                 <a href="#47">#47 Joe McEwing (bench/infield)</a><br>
                 <a href="#59">#59 Mark Salas (bullpen catcher/catching)</a><br>
                 <a href="#46">#46 Greg Sparks (assistant hitting)</a><br>
-                <a href="#31">#31 Todd Steverson (hitting))</a><br>
+                <a href="#31">#31 Todd Steverson (hitting)</a><br>
         </div> <!-- #leftNav -->
         <div id="playerInfo">
             <h1>Pitchers Starting Rotation</h1>
-                <!-- <img src="./images/27.jpg" height= 150px; alt="27" style="float: left;">     -->
-                    <h2 id="27">#27 Lucas Giolito</h2>
+                <img id="27" src="./images/27.jpg" height= 150px; alt="27">    
+                    <h2>#27 Lucas Giolito</h2>
                     <p>Lucas Frost Giolito (born July 14, 1994) is an American professional baseball pitcher for the Chicago White Sox of Major League Baseball (MLB). He attended Harvard-Westlake School in Studio City, California, and was selected by the Washington Nationals in the first round in the 2012 MLB draft. He made his MLB debut with the Nationals in 2016. His fastball has been clocked as high as 100 miles per hour (160 km/h)</p>
                 <br>
-                <!-- <img src="./images/40.jpg" height= 150px; alt="40" style="float: left;"> -->
-                    <h2 id="40">#40 Reynaldo López</h2>
+                <img id="40" src="./images/40.jpg" height= 150px; alt="40">
+                    <h2>#40 Reynaldo López</h2>
                     <p>Reynaldo Starling López Kely (born January 4, 1994) is a Dominican professional baseball pitcher for the Chicago White Sox of Major League Baseball (MLB). He made his MLB debut with the Washington Nationals in 2016.</p>
                 <br>
                 <!-- <img src="./images/33.jpg" height= 150px; alt="33" style="float: left;"> -->
@@ -228,13 +250,14 @@
                     <p>Born in Chandler, Arizona, he is the son of Joe Sparks,[1] a retired professional baseball player, coach, manager and scout. Greg Sparks served as a batboy for the White Sox in 1979 (when his father spent part of that year on the club's coaching staff), and was present on Disco Demolition Night. He went on to attend Mesa Community College, then forge a 13-year playing career, mostly at the Double-A level. In 1992, he hit 25 home runs as a member of the London Tigers of the Eastern League. An outfielder and first baseman, he threw and batted left-handed, stood 6 feet (1.8 m) tall and weighed 185 pounds (84 kg).</p>
                     <p>He worked for the Oakland Athletics' organization for 19 years, beginning in 1997, as a minor league manager and hitting coordinator.[2] The White Sox hired him as their assistant hitting coach after the 2015 season.</p>
                 <br>
-                    <h2 id="31">#31 Todd Steverson (hitting))</h2>
+                    <h2 id="31">#31 Todd Steverson (hitting)</h2>
                     <p>Todd Anthony Steverson (born November 15, 1971) is an American professional baseball and former coach, left and right fielder in Major League Baseball. Steverson is the hitting coach of the Chicago White Sox[1] and the former first base coach of the Oakland Athletics. During his active career, he played for the Detroit Tigers and San Diego Padres. Steverson threw and batted right-handed, stood 6 feet 2 inches (1.88 m) tall and weighed 194 pounds (88 kg).</p>
                 <br> 
         </div> <!-- playerInfo -->
-        <footer>
-            <p>copyright &copy;</p>
-        </footer>
-</div>
+    </div>
+    <footer>
+        <p>copyright &copy;</p>
+    </footer>
+
 </body>
 </html>
